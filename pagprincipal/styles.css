@@ -143,9 +143,17 @@ color:white;
 
 .logo img{
 
-width:120px;
-height:40px;
+width: 82px;;
+height: 82px;;
 
 object-fit:contain;
 
+}
+
+card-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
