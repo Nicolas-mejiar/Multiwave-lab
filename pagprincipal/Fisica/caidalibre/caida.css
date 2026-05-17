@@ -33,7 +33,33 @@ background:#0f172a;
 }
 
 .logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+
 font-weight:bold;
+font-size:18px;
+
+color:white;
+
+}
+
+.logo img{
+
+width: 82px;;
+height: 82px;;
+
+object-fit:contain;
+
+}
+
+card-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .search{
