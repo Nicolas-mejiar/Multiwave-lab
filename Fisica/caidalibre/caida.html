@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="caida.css">
+</head>
+<body>
+<header class="navbar">
+
+<div class="logo">
+    <img src="../../img/log-claro.png" alt="Mathwaylab Logo">
+</div>
+
+<input class="search" placeholder="Buscar experimentos...">
+
+<nav>
+<a href="#">Física</a>
+<a href="#">Matemática</a>
+<a href="#">Química</a>
+</nav>
+
+</header>
+    <h1>Simulador de Caída Libre</h1>
+
+<div class="panel">
+    <canvas id="simulacion" width="400" height="500"></canvas>
+    <script src="caida.js"></script>
+    <div class="controls">
+        <div class="controls-top">
+        
+        <!-- Bloque de las entradas y botones -->
+            <div class="inputs-block">
+                <div class="input-group">
+                    <input type="number" id="altura" value="100">
+                    <label for="altura">Altura inicial (m)</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="gravedad" value="9.8">
+                <label for="gravedad">Gravedad (m/s²)</label>
+            </div>
+
+            <div class="action-buttons">
+                <button onclick="iniciar()">Iniciar</button>
+                <button onclick="reiniciar()">Reiniciar</button>
+            </div>
+        </div>
+
+        <!-- Recuadro blanco de estadísticas -->
+        <div class="datos">
+            <p>Tiempo: <span id="tiempo">0</span> s</p>
+            <p>Velocidad: <span id="velocidad">0</span> m/s</p>
+            <p>Altura: <span id="altura-actual">100</span> m</p>
+        </div>
+
+    </div>
+    <!-- Sección de Desplegables Informativos -->
+<div class="info-desplegables">
+
+    <details>
+        <summary>¿Qué es la Caída Libre?</summary>
+        <p>Es el movimiento que realiza un cuerpo bajo la acción exclusiva de un campo gravitatorio, sin resistencia del aire.</p>
+    </details>
+
+    <details>
+        <summary>Fórmulas utilizadas</summary>
+        <p><strong>Velocidad:</strong> $v = g \cdot t$</p>
+        <p><strong>Posición:</strong> $h = h_0 - \frac{1}{2}g \cdot t^2$</p>
+    </details>
+
+</div>
+
+    
+</div>
+<div class="footer">
+    <p>&copy; 2026 Mathwaylab. Proyecto de Para la asignatura de calculo de la Universidad Libre.</p>
+</body>
+</html>
