@@ -68,16 +68,7 @@ canvas {
     border: 2px solid black;
     margin-top: 20px;
 }
-
-/* Columna derecha: Fuerza a todos los hijos a alinearse a la izquierda */
-.controls {
-    display: flex;
-    flex-direction: column;  
-    align-items: flex-start; 
-    gap: 15px;               
-    text-align: left;        
-}
-
+¿
 /* --- ENTRADAS DE TEXTO (INPUTS) --- */
 .input-group {
     display: flex;
@@ -107,6 +98,11 @@ canvas {
     border: 1px solid #ccc;
     background: white;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;  
+    gap: 25px;               
+    align-items: stretch;    
+    text-align: left
 }
 
 /* --- RECUADRO BLANCO DE ESTADÍSTICAS --- */
@@ -118,28 +114,26 @@ canvas {
     padding: 15px;
     border: 1px solid #666;
     text-align: left;
-    
-    /* Quitamos márgenes automáticos que lo empujaban a la derecha */
     margin-left: 0;
     margin-right: auto;
-    width: 160px; /* Ancho fijo para mantener la forma de tarjeta */
+    width: 160px; 
 }
 info-desplegables {
     width: 100%;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre cada pestaña desplegable */
+    gap: 10px; 
 }
 
 .info-desplegables details {
-    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente que combina con el morado */
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     padding: 10px;
     transition: background 0.3s ease;
     width: 100%;
-    max-width: 320px; /* Limita el ancho para que no se estire demasiado */
+    max-width: 320px; 
     box-sizing: border-box;
 }
 
@@ -152,15 +146,20 @@ info-desplegables {
 .info-desplegables summary {
     font-weight: bold;
     cursor: pointer;
-    color: #f3e8ff; /* Tono morado claro/blanco para resaltar */
+    color: #f3e8ff; 
     outline: none;
-    user-select: none; /* Evita que el texto se seleccione al hacer doble clic */
+    user-select: none; 
 }
 
 /* Estilo del texto oculto que aparece al expandir */
 .info-desplegables details p {
     margin: 10px 0 0 0;
     font-size: 14px;
-    color: #e9d5ff; /* Texto ligeramente más suave para lectura cómoda */
+    color: #e9d5ff; 
     line-height: 1.4;
+}
+.inputs-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
